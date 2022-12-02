@@ -1,9 +1,15 @@
 import csv
 
-
+#list theList = ()
 print ("hello world")
-with open('CS170_Small_Data__6.txt') as file:
-    reader = csv.reader(file, delimiter = "\t")
-
-    for line in reader:
-        print(line[2])
+file = open('CS170_Small_Data__6.txt')
+    #reader = csv.reader(file)
+line = file.readline()
+print (type(line))
+mylist = line.split()
+print(mylist)
+print(mylist[1])
+    #for line in reader:
+        #mylist = line.split()
+        #print (mylist)
+    #   print (line)

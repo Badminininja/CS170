@@ -44,6 +44,7 @@ file.close()
 
 def accuracy():
     file = open('CS170_Test__Data.txt')
+    number_correctly_classfied = 0
     data = file.readlines()
     mylist = data[0].split()
     featureLength = len(mylist)
@@ -72,10 +73,14 @@ def accuracy():
 
                 if distance < nearest_neighbor_distance:
                         nearest_neighbor_distance = distance
-                        nearest_neighbor_location = k;
+                        nearest_neighbor_location = k
                         nearest_neighbor_label = int(float(mylist2[0]))
         print('Object ' + str(i+1) + ' is class '+ str(label_object_to_classify))
         print('Its nearest neighbor is ' + str(nearest_neighbor_location) + ' which is in class ' + str(nearest_neighbor_label))
+        if label_object_to_classify == nearest_neighbor_label:
+            number_correctly_classfied += 1
     file.close()
+    return number_correctly_classfied / dataLength
 
-accuracy()
+acc = accuracy()
+print(str(acc))

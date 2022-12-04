@@ -9,9 +9,7 @@ print ("hello world")
 very_best_accuracy = 0
 best_so_far_index = 0
 def cross_validation(data, current_set,feature_to_add): #leave-one-out cross validation
-    file = open('CS170_Small_Data__96.txt')
     number_correctly_classfied = 0
-    data = file.readlines()
     mylist = data[0].split()
     featureLength = len(mylist)
     dataLength = len(data)
@@ -55,7 +53,6 @@ def cross_validation(data, current_set,feature_to_add): #leave-one-out cross val
         #print('Its nearest neighbor is ' + str(nearest_neighbor_location+1) + ' which is in class ' + str(nearest_neighbor_label))
         if label_object_to_classify == nearest_neighbor_label:
             number_correctly_classfied += 1
-    file.close()
     return number_correctly_classfied / dataLength
 
 
@@ -84,24 +81,13 @@ def feature_search(data):
 
 
 
-file = open('CS170_Small_Data__96.txt')
-    #reader = csv.reader(file)
+file = open('CS170_Small_Data__88.txt')
 data = file.readlines() #list of strings that hold all of the data
-mylist = data[0].split()
 feature_search(data)
 print('The set of right features are: ')
-for p in range(best_so_far_index+1):
-    print(current_set[p])
+answerlist = list(())
+for p in range(best_so_far_index):
+    answerlist.append(current_set[p])
+print(answerlist)
 print('with the best accuracy being: ' + str(very_best_accuracy))
-#print(mylist)
-#print(len(mylist))
-#print(mylist[4])
-#floatTest = float(mylist[4])
-#print(floatTest)
 file.close()
-
-#def accuracy(data, current_set, feature_to_add):
-    
-
-#acc = accuracy()
-#print(str(acc))

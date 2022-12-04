@@ -1,4 +1,6 @@
 import csv
+from math import sqrt
+import math
 import random
 
 current_set = list(())
@@ -44,14 +46,36 @@ def accuracy():
     file = open('CS170_Test__Data.txt')
     data = file.readlines()
     mylist = data[0].split()
-    length = len(data)
-    for i in range(0, length):
-        #object_to_classify = 
+    featureLength = len(mylist)
+    dataLength = len(data)
+    for i in range(0, dataLength):
+        object_to_classify = -1
         mylist = data[i].split()
         label_object_to_classify = int(float(mylist[0]))
 
-        print('Looping over i, at the ' + str(i+1) + ' location')
-        print('The ' + str(i+1) + 'th object is in class ' + str(label_object_to_classify)) 
+        #print('Looping over i, at the ' + str(i+1) + ' location')
+        #print('The ' + str(i+1) + 'th object is in class ' + str(label_object_to_classify)) 
+
+        nearest_neighbor_distance = float('inf')
+        nearest_neighbor_location = float('inf')
+        for k in range(0, dataLength):
+            if k is not i:
+                #print('Ask if ' + str(i+1) + ' is nearest neighbour with ' + str(k+1))
+                summation = 0
+                for j in range (1, featureLength):
+                    object_to_classify = float(mylist[j])
+                    mylist2 = data[k].split()
+                    object_to_classify_for_k = float(mylist2[j])
+                    summation = summation + (object_to_classify - object_to_classify_for_k)
+                
+                distance = math.sqrt(summation**2)
+
+                if distance < nearest_neighbor_distance:
+                        nearest_neighbor_distance = distance
+                        nearest_neighbor_location = k;
+                        nearest_neighbor_label = int(float(mylist2[0]))
+        print('Object ' + str(i+1) + ' is class '+ str(label_object_to_classify))
+        print('Its nearest neighbor is ' + str(nearest_neighbor_location) + ' which is in class ' + str(nearest_neighbor_label))
     file.close()
 
 accuracy()

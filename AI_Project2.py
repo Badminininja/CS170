@@ -76,7 +76,7 @@ def accuracy():
                         nearest_neighbor_location = k
                         nearest_neighbor_label = int(float(mylist2[0]))
         print('Object ' + str(i+1) + ' is class '+ str(label_object_to_classify))
-        print('Its nearest neighbor is ' + str(nearest_neighbor_location) + ' which is in class ' + str(nearest_neighbor_label))
+        print('Its nearest neighbor is ' + str(nearest_neighbor_location+1) + ' which is in class ' + str(nearest_neighbor_label))
         if label_object_to_classify == nearest_neighbor_label:
             number_correctly_classfied += 1
     file.close()

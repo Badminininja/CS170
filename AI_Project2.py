@@ -30,57 +30,54 @@ def cross_validation(data, testing_set):                        #leave-one-out c
             number_correctly_classfied += 1
     return number_correctly_classfied / dataLength              #return the accuracy
 
-
-def feature_search_forward(data): # forward selection
-    global very_best_accuracy
+def feature_search_forward(data, featurelist):                  # forward selection
+    global very_best_accuracy                                   #initilize global variables
     global answerlist
-    mylist = data[0].split()
     print('Beginning search.')
-    for i in range(1, len(mylist)):
-        feature_to_add_at_this_level = list(())
-        best_so_far_accuracy = 0
-        for k in range(1, len(mylist)):
-            if k not in current_set:
-                testingSet = current_set.copy()
-                testingSet.append(k)
+    for i in range(1, len(featurelist)):                        #feature list only there for its length which is the features
+        feature_to_add_at_this_level = list(())                 #initilize feature to add list to know the best feature to add/remove
+        best_so_far_accuracy = 0                                #initilize best accuracy
+        for k in range(1, len(featurelist)):                    #how we want to test what additional features to try
+            if k not in current_set:                            #do not repeat features
+                testingSet = current_set.copy()                 #copy the current set to a new set we can alter for testing
+                testingSet.append(k)                            #add the feature we want to add to the testing set
                 print('    Using features(s)', end=' ')
                 print(testingSet, end= ' ')
-                temp_accuracy = cross_validation(data, testingSet)
-                print('accuracy is  ' + str("{:.1f}".format(temp_accuracy*100)) + '%')
-                if temp_accuracy > best_so_far_accuracy:
-                    best_so_far_accuracy = temp_accuracy
-                    feature_to_add_at_this_level.append(k)
-        current_set.insert(i, feature_to_add_at_this_level[-1])
-        if best_so_far_accuracy > very_best_accuracy:
-            very_best_accuracy = best_so_far_accuracy
-            answerlist = current_set.copy()
+                temp_accuracy = cross_validation(data, testingSet) #test the testing set with cross validation
+                print('accuracy is  ' + str("{:.1f}".format(temp_accuracy*100)) + '%') # print the accuracy of using that set
+                if temp_accuracy > best_so_far_accuracy:        #if the accuracy of this set is the best
+                    best_so_far_accuracy = temp_accuracy        #update the best accuracy
+                    feature_to_add_at_this_level.append(k)      #add it to be the latest feature to add
+        current_set.insert(i, feature_to_add_at_this_level[-1]) #after all the testing, add/remove the feature that resulted in the best accuracy
+        if best_so_far_accuracy > very_best_accuracy:           #if best accuracy in this set is the best overall
+            very_best_accuracy = best_so_far_accuracy           #update respective global accuracy
+            answerlist = current_set.copy()                     #update respective global set
         print('Feature set', end=' ')
         print(current_set, end=' ')
         print('was best, accuracy is ' + str("{:.1f}".format(best_so_far_accuracy*100)) + '%')
 
-def feature_search_backwards(data, initial_set): #backwards elimination 
-    global very_best_accuracy
+def feature_search_backwards(data, initial_set, featurelist):   #backwards elimination 
+    global very_best_accuracy                                   #essentially the same thing as forward, but we remove instead of add
     global answerlist
-    mylist = data[0].split()
-    placeHolderSet = list(())
-    current_set = initial_set
+    placeHolderSet = list(())                                   #have a placeholder list to track which features we've removed
+    current_set = initial_set                                   #start with a full list of features
     print('Beginning search.')
-    for i in range(1, len(mylist)):
-        feature_to_add_at_this_level = list(())
+    for i in range(1, len(featurelist)):
+        feature_to_remove_at_this_level = list(())
         best_so_far_accuracy = 0
-        for k in range(1, len(mylist)):
-            if k not in placeHolderSet:
+        for k in range(1, len(featurelist)):
+            if k not in placeHolderSet:                         #check if we've removed this feature before already
                 testingSet = current_set.copy()
-                testingSet.remove(k)
+                testingSet.remove(k)                            #remove the said feature from the testing set
                 print('    Using features(s)', end=' ')
                 print(testingSet, end= ' ')
                 temp_accuracy = cross_validation(data, testingSet)
                 print('accuracy is  ' + str("{:.1f}".format(temp_accuracy*100)) + '%')
                 if temp_accuracy > best_so_far_accuracy:
                     best_so_far_accuracy = temp_accuracy
-                    feature_to_add_at_this_level.append(k)
-        placeHolderSet.insert(i, feature_to_add_at_this_level[-1])
-        current_set.remove(feature_to_add_at_this_level[-1])
+                    feature_to_remove_at_this_level.append(k)
+        placeHolderSet.insert(i, feature_to_remove_at_this_level[-1])  #insert the feature we removed that led to the best accuracy
+        current_set.remove(feature_to_remove_at_this_level[-1])        #remove the feature that led to the best accuracy from the current set 
         if best_so_far_accuracy > very_best_accuracy:
             very_best_accuracy = best_so_far_accuracy
             answerlist = current_set.copy()
@@ -104,17 +101,17 @@ if(search_Algo == '1'):
     initial_set = list(())
     for a in range(1, len(featurelist)):
         initial_set.append(a)
-    print(str("{:.1f}".format(cross_validation(data, initial_set)*100)) + '%')
-    feature_search_forward(data)
+    print(str("{:.1f}".format(cross_validation(data, initial_set)*100)) + '%') #use all of features and get its accuracy
+    feature_search_forward(data, featurelist)
 elif(search_Algo == '2'):
     featurelist = data[0].split()
     print('This dataset has ' + str(len(featurelist)-1) + ' features (not including the class attribute), with ' + str(len(data)) + ' instances.')
     print('Running nearest neighbor with all ' + str(len(featurelist)-1) + ' features, using "leaving-one-out" evaluation, I get an accuracy of:', end=' ')
     initial_set = list(())
-    for a in range(1, len(featurelist)):
+    for a in range(1, len(featurelist)):    #create an initial set since we start with a full set and then remove one at a time
         initial_set.append(a)
     print(str("{:.1f}".format(cross_validation(data, initial_set)*100)) + '%')
-    feature_search_backwards(data, initial_set)
+    feature_search_backwards(data, initial_set, featurelist)
 print()
 print('Finished search!! The best feature subset is', end=' ')
 print(answerlist, end=', ')

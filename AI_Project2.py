@@ -60,12 +60,10 @@ def feature_search_forward(data): # forward selection
     mylist = data[0].split()
     print('Beginning search.')
     for i in range(1, len(mylist)):
-        #print('On the ' + str(i) + 'th level of the search tree')
         feature_to_add_at_this_level = list(())
         best_so_far_accuracy = 0
         for k in range(1, len(mylist)):
             if k not in current_set:
-                #print('considering adding the ' + str(k) + ' feature')
                 testingSet = current_set.copy()
                 testingSet.append(k)
                 print('    Using features(s)', end=' ')
@@ -75,7 +73,6 @@ def feature_search_forward(data): # forward selection
                 if temp_accuracy > best_so_far_accuracy:
                     best_so_far_accuracy = temp_accuracy
                     feature_to_add_at_this_level.append(k)
-        #print('best so far accuracy: ' + str(best_so_far_accuracy))
         current_set.insert(i, feature_to_add_at_this_level[-1])
         if best_so_far_accuracy > very_best_accuracy:
             very_best_accuracy = best_so_far_accuracy
@@ -84,6 +81,35 @@ def feature_search_forward(data): # forward selection
         print(current_set, end=' ')
         print('was best, accuracy is ' + str("{:.1f}".format(best_so_far_accuracy*100)) + '%')
 
+def feature_search_backwards(data, initial_set): #backwards elimination 
+    global very_best_accuracy
+    global answerlist
+    mylist = data[0].split()
+    placeHolderSet = list(())
+    current_set = initial_set
+    print('Beginning search.')
+    for i in range(1, len(mylist)):
+        feature_to_add_at_this_level = list(())
+        best_so_far_accuracy = 0
+        for k in range(1, len(mylist)):
+            if k not in placeHolderSet:
+                testingSet = current_set.copy()
+                testingSet.remove(k)
+                print('    Using features(s)', end=' ')
+                print(testingSet, end= ' ')
+                temp_accuracy = cross_validation(data, testingSet)
+                print('accuracy is  ' + str("{:.1f}".format(temp_accuracy*100)) + '%')
+                if temp_accuracy > best_so_far_accuracy:
+                    best_so_far_accuracy = temp_accuracy
+                    feature_to_add_at_this_level.append(k)
+        placeHolderSet.insert(i, feature_to_add_at_this_level[-1])
+        current_set.remove(feature_to_add_at_this_level[-1])
+        if best_so_far_accuracy > very_best_accuracy:
+            very_best_accuracy = best_so_far_accuracy
+            answerlist = current_set.copy()
+        print('Feature set', end=' ')
+        print(current_set, end=' ')
+        print('was best, accuracy is ' + str("{:.1f}".format(best_so_far_accuracy*100)) + '%')
 
 print('Welcome to Joseph\'s Feature Selection Algorithm')
 #fileName = input('Type in the name of the file to test: ')
@@ -104,7 +130,14 @@ if(search_Algo == '1'):
     print(str("{:.1f}".format(cross_validation(data, initial_set)*100)) + '%')
     feature_search_forward(data)
 elif(search_Algo == '2'):
-    print('Backwards elimination')
+    featurelist = data[0].split()
+    print('This dataset has ' + str(len(featurelist)-1) + ' features (not including the class attribute), with ' + str(len(data)) + ' instances.')
+    print('Running nearest neighbor with all ' + str(len(featurelist)-1) + ' features, using "leaving-one-out" evaluation, I get an accuracy of:', end=' ')
+    initial_set = list(())
+    for a in range(1, len(featurelist)):
+        initial_set.append(a)
+    print(str("{:.1f}".format(cross_validation(data, initial_set)*100)) + '%')
+    feature_search_backwards(data, initial_set)
 print()
 print('Finished search!! The best feature subset is', end=' ')
 print(answerlist, end=', ')

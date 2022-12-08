@@ -4,9 +4,8 @@ import random
 
 current_set = list(())
 random.seed()
-print ("hello world")
 very_best_accuracy = 0
-best_so_far_index = 0
+answerlist = list(())
 def cross_validation(data, testing_set): #leave-one-out cross validation
     number_correctly_classfied = 0
     mylist = data[0].split()
@@ -57,7 +56,7 @@ def cross_validation(data, testing_set): #leave-one-out cross validation
 
 def feature_search_forward(data): # forward selection
     global very_best_accuracy
-    global best_so_far_index
+    global answerlist
     mylist = data[0].split()
     print('Beginning search.')
     for i in range(1, len(mylist)):
@@ -77,23 +76,37 @@ def feature_search_forward(data): # forward selection
                     best_so_far_accuracy = temp_accuracy
                     feature_to_add_at_this_level.append(k)
         #print('best so far accuracy: ' + str(best_so_far_accuracy))
+        current_set.insert(i, feature_to_add_at_this_level[-1])
         if best_so_far_accuracy > very_best_accuracy:
             very_best_accuracy = best_so_far_accuracy
-            best_so_far_index = i
-        current_set.insert(i, feature_to_add_at_this_level[-1])
+            answerlist = current_set.copy()
         print('Feature set', end=' ')
         print(current_set, end=' ')
         print('was best, accuracy is ' + str("{:.1f}".format(best_so_far_accuracy*100)) + '%')
 
 
-
-file = open('CS170_Small_Data__88.txt')
+print('Welcome to Joseph\'s Feature Selection Algorithm')
+#fileName = input('Type in the name of the file to test: ')
+fileName = 'CS170_Small_Data__88.txt'
+file = open(fileName)
 data = file.readlines() #list of strings that hold all of the data
-feature_search_forward(data)
-print('The set of right features are: ')
-answerlist = list(())
-for p in range(best_so_far_index):
-    answerlist.append(current_set[p])
-print(answerlist)
-print('with the best accuracy being: ' + str("{:.1f}".format(very_best_accuracy*100)))
+print("Type the number of the algorithm you want to run.")
+print('    1) Forward Selection')
+print('    2) Backward Elimination')
+search_Algo = input()
+if(search_Algo == '1'):
+    featurelist = data[0].split()
+    print('This dataset has ' + str(len(featurelist)-1) + ' features (not including the class attribute), with ' + str(len(data)) + ' instances.')
+    print('Running nearest neighbor with all ' + str(len(featurelist)-1) + ' features, using "leaving-one-out" evaluation, I get an accuracy of:', end=' ')
+    initial_set = list(())
+    for a in range(1, len(featurelist)):
+        initial_set.append(a)
+    print(str("{:.1f}".format(cross_validation(data, initial_set)*100)) + '%')
+    feature_search_forward(data)
+elif(search_Algo == '2'):
+    print('Backwards elimination')
+print()
+print('Finished search!! The best feature subset is', end=' ')
+print(answerlist, end=', ')
+print('which has an accuracy of ' + str("{:.1f}".format(very_best_accuracy*100)) + '%')
 file.close()

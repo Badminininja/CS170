@@ -1,57 +1,34 @@
 from math import sqrt
 import math
-import random
 
 current_set = list(())
-random.seed()
 very_best_accuracy = 0
-answerlist = list(())
-def cross_validation(data, testing_set): #leave-one-out cross validation
-    number_correctly_classfied = 0
-    mylist = data[0].split()
-    featureLength = len(mylist)
+answerlist = list(()) #initialize place to keep the answerlist and best accuracy
+def cross_validation(data, testing_set):                        #leave-one-out cross validation
+    number_correctly_classfied = 0                              #keep track how many correct to get accuracy
+    mylist = data[0].split()                                    #use this to get the featurelist, separates the lines of data into a list of strings
     dataLength = len(data)
-    #featureSet = current_set.copy()
-    #featureSet.append(feature_to_add)
-    #print(current_set)
-    #print('feature to add: ' + str(feature_to_add))
-    for i in range(0, dataLength):
-        object_to_classify = -1
-        mylist = data[i].split()
+    for i in range(0, dataLength):                              #this is the leave one out
+        mylist = data[i].split()                                #feature list for the first object to compare to
         label_object_to_classify = int(float(mylist[0]))
-        #print('Looping over i, at the ' + str(i+1) + ' location')
-        #print('The ' + str(i+1) + 'th object is in class ' + str(label_object_to_classify)) 
-        nearest_neighbor_distance = float('inf')
-        nearest_neighbor_location = float('inf')
-        nearest_neighbor_label = 100
-        for k in range(0, dataLength):
-
-            if k is not i:
-                #print('Ask if ' + str(i+1) + ' is nearest neighbour with ' + str(k+1))
+        nearest_neighbor_distance, nearest_neighbor_location, nearest_neighbor_label = float('inf'), float('inf'), 100 #initial nearest neighbor information
+        for k in range(0, dataLength):                          #loop to get the 2nd object to compare to
+            if k is not i:                                      #make sure not to compare the same object to itself
                 summation = 0
-                mylist2 = data[k].split()
-                for j in testing_set:
-                    #object_to_classify = float(mylist[j])
-                    #object_to_classify_for_k = float(mylist2[j])
-                    #print('j: ' + str(j))
-                    #lets say curr set is [2,4,5] and feature to add is 6 this would go thru if j = to 1,3,6,7...
-                    object_to_classify = float(mylist[j])
-                    object_to_classify_for_k = float(mylist2[j])      
-                    summation += ((object_to_classify - object_to_classify_for_k)**2)
-                
-                distance = math.sqrt(summation)
-                #print('distance: ' + str(distance) + " vs nearest neighbor distance: " + str(nearest_neighbor_distance))
-                if distance < nearest_neighbor_distance:
+                mylist2 = data[k].split()                       #featurelist for the second object
+                for j in testing_set:                           #testing set is the feature's we will, this is my way of putting 0s on the features we aren't checking
+                    object_to_classify = float(mylist[j])                              #get the feature j from object 1
+                    object_to_classify_for_k = float(mylist2[j])                       #get the feature j from object 2
+                    summation += ((object_to_classify - object_to_classify_for_k)**2)  #get the summation 
+                distance = math.sqrt(summation)                 #sqrt the summation to get the distance from object 1 and 2 based on the features in the testing set
+                if distance < nearest_neighbor_distance:        #if the distance is less than current recorded nearest_neighbor data, make this the new nearest neighbor
                     nearest_neighbor_distance = distance
                     nearest_neighbor_location = k
                     mylist2 = data[nearest_neighbor_location].split()
                     nearest_neighbor_label = int(float(mylist2[0]))
-        #print('Object ' + str(i+1) + ' is class '+ str(label_object_to_classify))
-        #print('Its nearest neighbor is ' + str(nearest_neighbor_location+1) + ' which is in class ' + str(nearest_neighbor_label))
-        if label_object_to_classify == nearest_neighbor_label:
+        if label_object_to_classify == nearest_neighbor_label:  #if the label of object 1 is the same as the nearest neighbor then add 1 to correct classified
             number_correctly_classfied += 1
-    #print(str(number_correctly_classfied) + ' / ' + str(dataLength))
-    return number_correctly_classfied / dataLength
+    return number_correctly_classfied / dataLength              #return the accuracy
 
 
 def feature_search_forward(data): # forward selection
@@ -112,8 +89,8 @@ def feature_search_backwards(data, initial_set): #backwards elimination
         print('was best, accuracy is ' + str("{:.1f}".format(best_so_far_accuracy*100)) + '%')
 
 print('Welcome to Joseph\'s Feature Selection Algorithm')
-#fileName = input('Type in the name of the file to test: ')
-fileName = 'CS170_Small_Data__88.txt'
+fileName = input('Type in the name of the file to test: ')
+#fileName = 'CS170_Small_Data__88.txt'
 file = open(fileName)
 data = file.readlines() #list of strings that hold all of the data
 print("Type the number of the algorithm you want to run.")

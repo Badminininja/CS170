@@ -1,0 +1,871 @@
+Welcome to Joseph's Feature Selection Algorithm
+Type in the name of the file to test: CS170_Large_Data__111.txt 
+Type the number of the algorithm you want to run.
+    1) Forward Selection
+    2) Backward Elimination
+1
+This dataset has 40 features (not including the class attribute), with 1000 instances.
+Running nearest neighbor with all 40 features, using "leaving-one-out" evaluation, I get an accuracy of: 91.9%
+Beginning search.
+    Using features(s) [1] accuracy is  92.5%
+    Using features(s) [2] accuracy is  93.1%
+    Using features(s) [3] accuracy is  93.4%
+    Using features(s) [4] accuracy is  92.6%
+    Using features(s) [5] accuracy is  92.1%
+    Using features(s) [6] accuracy is  92.5%
+    Using features(s) [7] accuracy is  92.0%
+    Using features(s) [8] accuracy is  92.9%
+    Using features(s) [9] accuracy is  92.6%
+    Using features(s) [10] accuracy is  96.4%
+    Using features(s) [11] accuracy is  92.6%
+    Using features(s) [12] accuracy is  91.8%
+    Using features(s) [13] accuracy is  91.9%
+    Using features(s) [14] accuracy is  91.7%
+    Using features(s) [15] accuracy is  91.8%
+    Using features(s) [16] accuracy is  93.9%
+    Using features(s) [17] accuracy is  93.0%
+    Using features(s) [18] accuracy is  92.6%
+    Using features(s) [19] accuracy is  91.8%
+    Using features(s) [20] accuracy is  93.1%
+    Using features(s) [21] accuracy is  92.7%
+    Using features(s) [22] accuracy is  92.7%
+    Using features(s) [23] accuracy is  94.4%
+    Using features(s) [24] accuracy is  92.9%
+    Using features(s) [25] accuracy is  93.0%
+    Using features(s) [26] accuracy is  92.4%
+    Using features(s) [27] accuracy is  93.0%
+    Using features(s) [28] accuracy is  91.9%
+    Using features(s) [29] accuracy is  91.8%
+    Using features(s) [30] accuracy is  92.8%
+    Using features(s) [31] accuracy is  93.3%
+    Using features(s) [32] accuracy is  92.7%
+    Using features(s) [33] accuracy is  91.6%
+    Using features(s) [34] accuracy is  92.8%
+    Using features(s) [35] accuracy is  92.5%
+    Using features(s) [36] accuracy is  93.3%
+    Using features(s) [37] accuracy is  91.4%
+    Using features(s) [38] accuracy is  92.3%
+    Using features(s) [39] accuracy is  93.1%
+    Using features(s) [40] accuracy is  93.1%
+Feature set [10] was best, accuracy is 96.4%
+    Using features(s) [10, 1] accuracy is  95.2%
+    Using features(s) [10, 2] accuracy is  96.6%
+    Using features(s) [10, 3] accuracy is  95.4%
+    Using features(s) [10, 4] accuracy is  95.4%
+    Using features(s) [10, 5] accuracy is  94.8%
+    Using features(s) [10, 6] accuracy is  95.5%
+    Using features(s) [10, 7] accuracy is  95.8%
+    Using features(s) [10, 8] accuracy is  95.1%
+    Using features(s) [10, 9] accuracy is  95.8%
+    Using features(s) [10, 11] accuracy is  96.6%
+    Using features(s) [10, 12] accuracy is  95.2%
+    Using features(s) [10, 13] accuracy is  95.5%
+    Using features(s) [10, 14] accuracy is  95.1%
+    Using features(s) [10, 15] accuracy is  96.5%
+    Using features(s) [10, 16] accuracy is  95.5%
+    Using features(s) [10, 17] accuracy is  95.3%
+    Using features(s) [10, 18] accuracy is  94.1%
+    Using features(s) [10, 19] accuracy is  96.1%
+    Using features(s) [10, 20] accuracy is  95.3%
+    Using features(s) [10, 21] accuracy is  94.6%
+    Using features(s) [10, 22] accuracy is  95.6%
+    Using features(s) [10, 23] accuracy is  99.4%
+    Using features(s) [10, 24] accuracy is  95.1%
+    Using features(s) [10, 25] accuracy is  94.7%
+    Using features(s) [10, 26] accuracy is  94.8%
+    Using features(s) [10, 27] accuracy is  95.2%
+    Using features(s) [10, 28] accuracy is  95.0%
+    Using features(s) [10, 29] accuracy is  94.9%
+    Using features(s) [10, 30] accuracy is  95.2%
+    Using features(s) [10, 31] accuracy is  95.8%
+    Using features(s) [10, 32] accuracy is  95.0%
+    Using features(s) [10, 33] accuracy is  95.8%
+    Using features(s) [10, 34] accuracy is  95.0%
+    Using features(s) [10, 35] accuracy is  94.7%
+    Using features(s) [10, 36] accuracy is  95.9%
+    Using features(s) [10, 37] accuracy is  95.0%
+    Using features(s) [10, 38] accuracy is  96.1%
+    Using features(s) [10, 39] accuracy is  96.3%
+    Using features(s) [10, 40] accuracy is  95.5%
+Feature set [10, 23] was best, accuracy is 99.4%
+    Using features(s) [10, 23, 1] accuracy is  98.4%
+    Using features(s) [10, 23, 2] accuracy is  98.3%
+    Using features(s) [10, 23, 3] accuracy is  98.2%
+    Using features(s) [10, 23, 4] accuracy is  99.0%
+    Using features(s) [10, 23, 5] accuracy is  98.6%
+    Using features(s) [10, 23, 6] accuracy is  98.7%
+    Using features(s) [10, 23, 7] accuracy is  98.7%
+    Using features(s) [10, 23, 8] accuracy is  98.4%
+    Using features(s) [10, 23, 9] accuracy is  98.5%
+    Using features(s) [10, 23, 11] accuracy is  98.6%
+    Using features(s) [10, 23, 12] accuracy is  99.3%
+    Using features(s) [10, 23, 13] accuracy is  98.5%
+    Using features(s) [10, 23, 14] accuracy is  98.5%
+    Using features(s) [10, 23, 15] accuracy is  98.9%
+    Using features(s) [10, 23, 16] accuracy is  98.9%
+    Using features(s) [10, 23, 17] accuracy is  98.5%
+    Using features(s) [10, 23, 18] accuracy is  98.6%
+    Using features(s) [10, 23, 19] accuracy is  98.3%
+    Using features(s) [10, 23, 20] accuracy is  98.6%
+    Using features(s) [10, 23, 21] accuracy is  98.8%
+    Using features(s) [10, 23, 22] accuracy is  98.6%
+    Using features(s) [10, 23, 24] accuracy is  98.7%
+    Using features(s) [10, 23, 25] accuracy is  99.0%
+    Using features(s) [10, 23, 26] accuracy is  98.3%
+    Using features(s) [10, 23, 27] accuracy is  99.0%
+    Using features(s) [10, 23, 28] accuracy is  98.2%
+    Using features(s) [10, 23, 29] accuracy is  98.2%
+    Using features(s) [10, 23, 30] accuracy is  98.6%
+    Using features(s) [10, 23, 31] accuracy is  97.7%
+    Using features(s) [10, 23, 32] accuracy is  98.6%
+    Using features(s) [10, 23, 33] accuracy is  98.9%
+    Using features(s) [10, 23, 34] accuracy is  98.7%
+    Using features(s) [10, 23, 35] accuracy is  98.4%
+    Using features(s) [10, 23, 36] accuracy is  98.2%
+    Using features(s) [10, 23, 37] accuracy is  98.6%
+    Using features(s) [10, 23, 38] accuracy is  98.1%
+    Using features(s) [10, 23, 39] accuracy is  98.0%
+    Using features(s) [10, 23, 40] accuracy is  99.0%
+Feature set [10, 23, 12] was best, accuracy is 99.3%
+    Using features(s) [10, 23, 12, 1] accuracy is  98.1%
+    Using features(s) [10, 23, 12, 2] accuracy is  98.1%
+    Using features(s) [10, 23, 12, 3] accuracy is  98.1%
+    Using features(s) [10, 23, 12, 4] accuracy is  97.7%
+    Using features(s) [10, 23, 12, 5] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 6] accuracy is  97.5%
+    Using features(s) [10, 23, 12, 7] accuracy is  97.7%
+    Using features(s) [10, 23, 12, 8] accuracy is  98.1%
+    Using features(s) [10, 23, 12, 9] accuracy is  97.9%
+    Using features(s) [10, 23, 12, 11] accuracy is  97.8%
+    Using features(s) [10, 23, 12, 13] accuracy is  98.0%
+    Using features(s) [10, 23, 12, 14] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 15] accuracy is  97.8%
+    Using features(s) [10, 23, 12, 16] accuracy is  98.3%
+    Using features(s) [10, 23, 12, 17] accuracy is  98.2%
+    Using features(s) [10, 23, 12, 18] accuracy is  97.6%
+    Using features(s) [10, 23, 12, 19] accuracy is  97.0%
+    Using features(s) [10, 23, 12, 20] accuracy is  96.7%
+    Using features(s) [10, 23, 12, 21] accuracy is  97.0%
+    Using features(s) [10, 23, 12, 22] accuracy is  97.4%
+    Using features(s) [10, 23, 12, 24] accuracy is  97.7%
+    Using features(s) [10, 23, 12, 25] accuracy is  98.1%
+    Using features(s) [10, 23, 12, 26] accuracy is  97.7%
+    Using features(s) [10, 23, 12, 27] accuracy is  97.5%
+    Using features(s) [10, 23, 12, 28] accuracy is  98.0%
+    Using features(s) [10, 23, 12, 29] accuracy is  98.0%
+    Using features(s) [10, 23, 12, 30] accuracy is  97.1%
+    Using features(s) [10, 23, 12, 31] accuracy is  97.4%
+    Using features(s) [10, 23, 12, 32] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 33] accuracy is  97.5%
+    Using features(s) [10, 23, 12, 34] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 35] accuracy is  97.7%
+    Using features(s) [10, 23, 12, 36] accuracy is  97.8%
+    Using features(s) [10, 23, 12, 37] accuracy is  97.6%
+    Using features(s) [10, 23, 12, 38] accuracy is  97.9%
+    Using features(s) [10, 23, 12, 39] accuracy is  97.4%
+    Using features(s) [10, 23, 12, 40] accuracy is  97.7%
+Feature set [10, 23, 12, 16] was best, accuracy is 98.3%
+    Using features(s) [10, 23, 12, 16, 1] accuracy is  97.0%
+    Using features(s) [10, 23, 12, 16, 2] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 16, 3] accuracy is  97.0%
+    Using features(s) [10, 23, 12, 16, 4] accuracy is  97.4%
+    Using features(s) [10, 23, 12, 16, 5] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 6] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 7] accuracy is  97.0%
+    Using features(s) [10, 23, 12, 16, 8] accuracy is  97.4%
+    Using features(s) [10, 23, 12, 16, 9] accuracy is  97.1%
+    Using features(s) [10, 23, 12, 16, 11] accuracy is  96.7%
+    Using features(s) [10, 23, 12, 16, 13] accuracy is  96.9%
+    Using features(s) [10, 23, 12, 16, 14] accuracy is  96.1%
+    Using features(s) [10, 23, 12, 16, 15] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 17] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 18] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 16, 19] accuracy is  96.6%
+    Using features(s) [10, 23, 12, 16, 20] accuracy is  97.2%
+    Using features(s) [10, 23, 12, 16, 21] accuracy is  96.6%
+    Using features(s) [10, 23, 12, 16, 22] accuracy is  97.2%
+    Using features(s) [10, 23, 12, 16, 24] accuracy is  96.7%
+    Using features(s) [10, 23, 12, 16, 25] accuracy is  97.5%
+    Using features(s) [10, 23, 12, 16, 26] accuracy is  96.1%
+    Using features(s) [10, 23, 12, 16, 27] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 16, 28] accuracy is  97.6%
+    Using features(s) [10, 23, 12, 16, 29] accuracy is  96.6%
+    Using features(s) [10, 23, 12, 16, 30] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 31] accuracy is  97.0%
+    Using features(s) [10, 23, 12, 16, 32] accuracy is  96.4%
+    Using features(s) [10, 23, 12, 16, 33] accuracy is  97.3%
+    Using features(s) [10, 23, 12, 16, 34] accuracy is  97.4%
+    Using features(s) [10, 23, 12, 16, 35] accuracy is  98.0%
+    Using features(s) [10, 23, 12, 16, 36] accuracy is  96.9%
+    Using features(s) [10, 23, 12, 16, 37] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 38] accuracy is  96.6%
+    Using features(s) [10, 23, 12, 16, 39] accuracy is  96.9%
+    Using features(s) [10, 23, 12, 16, 40] accuracy is  97.3%
+Feature set [10, 23, 12, 16, 35] was best, accuracy is 98.0%
+    Using features(s) [10, 23, 12, 16, 35, 1] accuracy is  96.1%
+    Using features(s) [10, 23, 12, 16, 35, 2] accuracy is  96.7%
+    Using features(s) [10, 23, 12, 16, 35, 3] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 35, 4] accuracy is  97.0%
+    Using features(s) [10, 23, 12, 16, 35, 5] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 35, 6] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 35, 7] accuracy is  96.8%
+    Using features(s) [10, 23, 12, 16, 35, 8] accuracy is  95.4%
+    Using features(s) [10, 23, 12, 16, 35, 9] accuracy is  95.4%
+    Using features(s) [10, 23, 12, 16, 35, 11] accuracy is  96.7%
+    Using features(s) [10, 23, 12, 16, 35, 13] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 35, 14] accuracy is  96.4%
+    Using features(s) [10, 23, 12, 16, 35, 15] accuracy is  95.8%
+    Using features(s) [10, 23, 12, 16, 35, 17] accuracy is  96.4%
+    Using features(s) [10, 23, 12, 16, 35, 18] accuracy is  96.7%
+    Using features(s) [10, 23, 12, 16, 35, 19] accuracy is  96.4%
+    Using features(s) [10, 23, 12, 16, 35, 20] accuracy is  97.2%
+    Using features(s) [10, 23, 12, 16, 35, 21] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 35, 22] accuracy is  95.9%
+    Using features(s) [10, 23, 12, 16, 35, 24] accuracy is  97.1%
+    Using features(s) [10, 23, 12, 16, 35, 25] accuracy is  95.7%
+    Using features(s) [10, 23, 12, 16, 35, 26] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 35, 27] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 35, 28] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 35, 29] accuracy is  96.8%
+    Using features(s) [10, 23, 12, 16, 35, 30] accuracy is  95.6%
+    Using features(s) [10, 23, 12, 16, 35, 31] accuracy is  96.6%
+    Using features(s) [10, 23, 12, 16, 35, 32] accuracy is  97.1%
+    Using features(s) [10, 23, 12, 16, 35, 33] accuracy is  96.2%
+    Using features(s) [10, 23, 12, 16, 35, 34] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 35, 36] accuracy is  96.6%
+    Using features(s) [10, 23, 12, 16, 35, 37] accuracy is  96.5%
+    Using features(s) [10, 23, 12, 16, 35, 38] accuracy is  95.8%
+    Using features(s) [10, 23, 12, 16, 35, 39] accuracy is  96.7%
+    Using features(s) [10, 23, 12, 16, 35, 40] accuracy is  97.0%
+Feature set [10, 23, 12, 16, 35, 20] was best, accuracy is 97.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 1] accuracy is  95.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 2] accuracy is  96.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 3] accuracy is  95.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 4] accuracy is  95.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 5] accuracy is  95.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 6] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 7] accuracy is  96.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 8] accuracy is  95.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 9] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 11] accuracy is  96.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 13] accuracy is  95.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 14] accuracy is  94.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 15] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 17] accuracy is  95.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 18] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 19] accuracy is  95.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 21] accuracy is  96.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 22] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 24] accuracy is  96.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 25] accuracy is  95.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 26] accuracy is  95.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 27] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 28] accuracy is  95.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 29] accuracy is  95.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 30] accuracy is  95.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 31] accuracy is  96.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 32] accuracy is  96.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 33] accuracy is  96.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 34] accuracy is  95.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36] accuracy is  96.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 37] accuracy is  95.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 38] accuracy is  95.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 39] accuracy is  95.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 40] accuracy is  96.4%
+Feature set [10, 23, 12, 16, 35, 20, 36] was best, accuracy is 96.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 1] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 2] accuracy is  95.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 3] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 4] accuracy is  96.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 5] accuracy is  95.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 6] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 7] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 8] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 9] accuracy is  94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 11] accuracy is  95.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 14] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 15] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 17] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 18] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 19] accuracy is  95.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 21] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 22] accuracy is  95.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 24] accuracy is  95.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 25] accuracy is  95.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 26] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 27] accuracy is  95.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 28] accuracy is  95.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 29] accuracy is  95.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 30] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 31] accuracy is  95.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 32] accuracy is  95.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 33] accuracy is  95.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 34] accuracy is  94.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 37] accuracy is  95.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 38] accuracy is  94.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 39] accuracy is  96.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 40] accuracy is  95.8%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13] was best, accuracy is 96.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 1] accuracy is  95.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 2] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 3] accuracy is  94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 4] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 5] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 6] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 7] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 8] accuracy is  94.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 9] accuracy is  95.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 11] accuracy is  94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 14] accuracy is  95.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 15] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 17] accuracy is  95.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18] accuracy is  95.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 19] accuracy is  95.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 21] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 22] accuracy is  94.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 24] accuracy is  95.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 25] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 26] accuracy is  94.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 27] accuracy is  94.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 28] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 29] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 30] accuracy is  95.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 31] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 32] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 33] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 34] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 37] accuracy is  94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 38] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 39] accuracy is  95.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 40] accuracy is  94.3%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18] was best, accuracy is 95.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 1] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 2] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 3] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 4] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5] accuracy is  95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 6] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 7] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 8] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 9] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 11] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 14] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 15] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 17] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 19] accuracy is  95.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 21] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 22] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 24] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 25] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 26] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 27] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 28] accuracy is  94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 29] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 30] accuracy is  94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 31] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 32] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 33] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 34] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 37] accuracy is  94.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 38] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 39] accuracy is  95.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 40] accuracy is  93.9%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5] was best, accuracy is 95.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 1] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 2] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 3] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 4] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 6] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 8] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 9] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 11] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 14] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 15] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 17] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 19] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 21] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 22] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 24] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 25] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 26] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 27] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 28] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 29] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 30] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 31] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 32] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 33] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 34] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 37] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 38] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 39] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 40] accuracy is  93.7%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7] was best, accuracy is 94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 1] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 2] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 3] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 4] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 6] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 8] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 9] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 11] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 14] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 15] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 17] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 19] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 21] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 22] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 24] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 25] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 26] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 27] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 29] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 30] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 31] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 32] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 33] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 34] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 37] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 38] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 39] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 40] accuracy is  94.1%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28] was best, accuracy is 94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 1] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 2] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 3] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 4] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 6] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 8] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 9] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 11] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 14] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 15] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 17] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 21] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 22] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 24] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 25] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 26] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 27] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 29] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 30] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 31] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 32] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 33] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 34] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 37] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 38] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 39] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 40] accuracy is  94.0%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19] was best, accuracy is 94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 1] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 2] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 3] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 4] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 8] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 9] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 11] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 14] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 15] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 17] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 21] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 22] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 24] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 25] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 26] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 27] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 29] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 30] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 31] accuracy is  94.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 32] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 33] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 34] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 37] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 38] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 39] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 40] accuracy is  94.3%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6] was best, accuracy is 94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 1] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 2] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 4] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 8] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 9] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 11] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 14] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 15] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 17] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 21] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 22] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 24] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 25] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 26] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 27] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 29] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 30] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 31] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 32] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 33] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 34] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 37] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 38] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 39] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 40] accuracy is  93.3%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3] was best, accuracy is 94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 1] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 2] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 4] accuracy is  92.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 8] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 9] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 11] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 14] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 15] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 17] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 21] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 22] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 24] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 25] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 26] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 27] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 29] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 30] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 31] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 32] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 33] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 34] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 37] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 39] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 40] accuracy is  92.7%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38] was best, accuracy is 93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 1] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 2] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 4] accuracy is  92.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 9] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 11] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 14] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 15] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 17] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 21] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 22] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 24] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 25] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 26] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 27] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 29] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 30] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 31] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 32] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 33] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 34] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 37] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 39] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 40] accuracy is  93.4%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8] was best, accuracy is 93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 1] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 2] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 4] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 9] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 11] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 14] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 15] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 17] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 21] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 22] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 24] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 25] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 26] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 27] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 29] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 30] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 32] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 33] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 34] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 37] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 39] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 40] accuracy is  93.6%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31] was best, accuracy is 94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 1] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 2] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 4] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 9] accuracy is  92.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 11] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 14] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 15] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 17] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 21] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 22] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 24] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 25] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 26] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 27] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 29] accuracy is  92.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 32] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 33] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 34] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 37] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 39] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 40] accuracy is  93.1%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30] was best, accuracy is 94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 1] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 2] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 4] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 9] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 11] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 14] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 15] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 17] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 21] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 22] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 24] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 25] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26] accuracy is  94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 27] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 29] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 32] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 33] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 34] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 37] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 39] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 40] accuracy is  93.4%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26] was best, accuracy is 94.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 1] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 2] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 4] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 9] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 11] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 14] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 15] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 17] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 21] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 22] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 24] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 25] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 27] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 29] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 32] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 34] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 37] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 39] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 40] accuracy is  94.1%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33] was best, accuracy is 94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 1] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 2] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 4] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 9] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 11] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 14] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 17] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 21] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 22] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 24] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 25] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 27] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 29] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 32] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 34] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 37] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 39] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 40] accuracy is  94.2%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15] was best, accuracy is 94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 1] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 2] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 4] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 9] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 11] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 14] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 17] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 21] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 22] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 24] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 25] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 27] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 29] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 32] accuracy is  94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 34] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 37] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 39] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40] accuracy is  94.9%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40] was best, accuracy is 94.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 1] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 2] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 4] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 9] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11] accuracy is  94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 14] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 17] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 21] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 22] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 24] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 25] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 27] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 29] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 32] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 34] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 37] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 39] accuracy is  93.5%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11] was best, accuracy is 94.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 1] accuracy is  93.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 2] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 4] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 9] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 14] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 17] accuracy is  94.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 21] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22] accuracy is  94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 24] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 25] accuracy is  94.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 27] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 29] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 32] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 34] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 37] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 39] accuracy is  93.7%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22] was best, accuracy is 94.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 1] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 2] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 9] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 14] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 17] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 21] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 24] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 25] accuracy is  94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 27] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 29] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 32] accuracy is  93.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 34] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 37] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 39] accuracy is  93.0%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4] was best, accuracy is 94.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 1] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 2] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 9] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 14] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 17] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 21] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 24] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 27] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 29] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 32] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 34] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 37] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 39] accuracy is  93.3%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25] was best, accuracy is 93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 1] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 9] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 14] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 17] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 21] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 24] accuracy is  92.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 27] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 29] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 32] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 34] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 37] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 39] accuracy is  92.5%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2] was best, accuracy is 93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 1] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 9] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 17] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 21] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 24] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 27] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 29] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 32] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 34] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 37] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 39] accuracy is  92.7%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14] was best, accuracy is 93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 1] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 9] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 17] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 21] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 24] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 27] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 29] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 34] accuracy is  93.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 37] accuracy is  92.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 39] accuracy is  92.5%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32] was best, accuracy is 93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 1] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 9] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 17] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 21] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 27] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 29] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 34] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 37] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 39] accuracy is  92.9%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24] was best, accuracy is 93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 1] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 9] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 17] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 21] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 27] accuracy is  93.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 29] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 34] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 37] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39] accuracy is  93.5%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39] was best, accuracy is 93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 1] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 9] accuracy is  92.3%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 17] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 21] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 27] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 34] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 37] accuracy is  93.0%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29] was best, accuracy is 93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 1] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 9] accuracy is  92.6%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 21] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 27] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 34] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 37] accuracy is  92.6%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17] was best, accuracy is 93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 1] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 9] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 21] accuracy is  93.0%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 27] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34] accuracy is  93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 37] accuracy is  92.9%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34] was best, accuracy is 93.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 1] accuracy is  92.7%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 9] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21] accuracy is  93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 27] accuracy is  93.1%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 37] accuracy is  93.1%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21] was best, accuracy is 93.4%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 1] accuracy is  92.8%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 9] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27] accuracy is  93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 37] accuracy is  92.9%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27] was best, accuracy is 93.2%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 1] accuracy is  93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 9] accuracy is  92.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 37] accuracy is  92.9%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 1] was best, accuracy is 93.5%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 1, 9] accuracy is  92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 1, 37] accuracy is  92.3%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 1, 9] was best, accuracy is 92.9%
+    Using features(s) [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 1, 9, 37] accuracy is  91.9%
+Feature set [10, 23, 12, 16, 35, 20, 36, 13, 18, 5, 7, 28, 19, 6, 3, 38, 8, 31, 30, 26, 33, 15, 40, 11, 22, 4, 25, 2, 14, 32, 24, 39, 29, 17, 34, 21, 27, 1, 9, 37] was best, accuracy is 91.9%
+
+Finished search!! The best feature subset is [10, 23], which has an accuracy of 99.4%

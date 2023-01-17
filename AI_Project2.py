@@ -83,8 +83,7 @@ def feature_search_backwards(data, initial_set, featurelist):   #backwards elimi
             answerlist = current_set.copy()
         print('Feature set', end=' ')
         print(current_set, end=' ')
-        print('was best, accuracy is ' + str("{:.1f}".format(best_so_far_accuracy*100)) + '%') hjk
-        hj
+        print('was best, accuracy is ' + str("{:.1f}".format(best_so_far_accuracy*100)) + '%')
 
 print('Welcome to Joseph\'s Feature Selection Algorithm')
 fileName = input('Type in the name of the file to test: ')
